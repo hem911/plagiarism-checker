@@ -145,10 +145,10 @@ STORAGES = {
 }
 
 
-# Cross-origin requests from the local frontend during development.
-CORS_ALLOWED_ORIGINS = get_environment_list(
-    'CORS_ALLOWED_ORIGINS', 'http://localhost:5173'
-)
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://online-plagiarism-checker.netlify.app",
+]
 
 
 # Email
